@@ -99,6 +99,8 @@ class MainActivity : AppCompatActivity() {
         )
 
         if(numJogadores == 1) {
+            activityMainBinding.escolhaJogador2Iv.visibility = View.GONE
+            activityMainBinding.mensagemJogador2Tv.visibility = View.GONE
             "O jogador 1 escolheu".also { activityMainBinding.mensagemJogador1Tv.text = it }
             if ((jogador1 == 1 && jogada == "pedra") || (jogador1 == 2 && jogada == "papel") || (jogador1 == 3 && jogada == "tesoura")) {
                 resultado = "Empate"
@@ -112,6 +114,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         if(numJogadores == 2) {
+            activityMainBinding.escolhaJogador2Iv.visibility = View.VISIBLE
+            activityMainBinding.mensagemJogador2Tv.visibility = View.VISIBLE
             val jogador2: Int = geradorRandomico.nextInt(1..3)
             var jogada2 = ""
             if(jogador2 == 1) {
