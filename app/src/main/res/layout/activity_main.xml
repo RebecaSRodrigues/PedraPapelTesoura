@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mensagemTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Selecione sua jogada e depois clique em jogar"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pedraBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedra"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemTv" />
+
+    <Button
+        android:id="@+id/papelBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pedraBt" />
+
+    <Button
+        android:id="@+id/tesouraBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tesoura"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/papelBt" />
+
+    <Button
+        android:id="@+id/jogarBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jogar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tesouraBt" />
+
+    <TextView
+        android:id="@+id/mensagemUsuarioTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jogarBt" />
+
+    <ImageView
+        android:id="@+id/escolhaUsuarioIv"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensagemUsuarioTv" />
+
+    <TextView
+        android:id="@+id/mensagemJogador1Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escolhaUsuarioIv" />
+
+    <ImageView
+        android:id="@+id/escolhaJogador1Iv"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensagemJogador1Tv" />
+
+    <TextView
+        android:id="@+id/mensagemJogador2Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escolhaJogador1Iv" />
+
+    <ImageView
+        android:id="@+id/escolhaJogador2Iv"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensagemJogador2Tv" />
+
+    <TextView
+        android:id="@+id/resultadoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escolhaJogador2Iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
