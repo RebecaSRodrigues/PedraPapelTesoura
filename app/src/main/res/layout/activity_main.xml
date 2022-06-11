@@ -17,32 +17,35 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageView
         android:id="@+id/pedraBt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pedra"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mensagemTv" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintRight_toLeftOf="@id/papelBt"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemTv"
+        app:srcCompat="@mipmap/pedra" />
 
-    <Button
+    <ImageView
         android:id="@+id/papelBt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Papel"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pedraBt" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemTv"
+        app:srcCompat="@mipmap/papel" />
 
-    <Button
+    <ImageView
         android:id="@+id/tesouraBt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tesoura"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/papelBt" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@id/papelBt"
+        app:layout_constraintTop_toBottomOf="@+id/mensagemTv"
+        app:srcCompat="@mipmap/tesoura" />
 
     <Button
         android:id="@+id/jogarBt"
@@ -112,7 +115,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/escolhaJogador2Iv" />
